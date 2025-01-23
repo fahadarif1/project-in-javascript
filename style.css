@@ -1,0 +1,259 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header{
+  background-color: black;
+
+}
+
+#main{
+    background-color: #ffc700 ;
+}
+
+
+.product-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.rating {
+  color: #ffc107; /* Gold color for stars */
+}
+
+.product-details {
+  line-height: 1.6;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffc107; /* Bootstrap danger color for price */
+}
+
+
+
+
+
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  background-color: #000000;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.nav-link{color: #ffffff;}
+
+.navbar-nav {
+  color: #fff !important;
+  font-size: 1.2rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc700 !important;
+}
+
+#nav-linked{
+  background-color: #ffc700;
+  border-radius: 12px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#nav-linked:hover{
+  background-color: #e0a800 !important;
+  
+}
+
+.hero-section {
+  /* margin: 20px;
+  padding: 20px; */
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80vh;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
+
+.hero-text{
+  text-align: left;
+
+}
+
+.hero-text #shop{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color:#e0a800 ;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.hero-text .btn-warning {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  background-color: #ffc700;
+  border: none;
+}
+
+.hero-text .btn-warning:hover {
+  background-color: #e0a800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  ;
+  }
+}
+
+
+
+
+
+
+
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Smooth zoom on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.card-img-top {
+  border-top-left-radius: 8px; /* Match card's border radius */
+  border-top-right-radius: 8px;
+}
+
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Custom CSS for card images */
+.card-img-top {
+  width: 100%; 
+  max-width: 170px; 
+  /* height: 0px;  */
+  margin: 0 auto; /* Center the image horizontally within the card */
+  border-radius: 8px; /* Slightly round the corners */
+  object-fit: contain; /* Ensure the image fits without distortion */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for images */
+.card-img-top:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
+
+
+/* Carousel Styling */
+.carousel {
+  border: 5px solid #ffc700;
+  width: 30%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.carousel-inner {
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+.carousel-item img {
+  width: 100%;
+  max-height: 400px; /* Sets a maximum height */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: contain; /* Ensures the entire image is visible within its container */
+  border-radius: 10px; /* Adds rounded corners */
+  
+}
+
+
+#middle-portion{
+  background-color: #fff;
+}
+
+#middle{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+#middle h1 {
+  font-size: 35px;
+}
+
+#middle h2 {
+  font-size: 30px;
+}
+
+#middle p{
+  text-align: center;
+}
+
+/* Change color of the left and right arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #ffc700; /* Sets the background color to #ffc700 */
+  border-radius: 50%; /* Makes the arrow background circular */
+  width: 40px; /* Adjusts the size */
+  height: 40px;
+}
+
+/* Change color of the carousel indicators (dots below the slides) */
+.carousel-indicators [data-bs-target] {
+  background-color: #ffc700; /* Sets the dot color to #ffc700 */
+}
+
+.carousel-indicators .active {
+  background-color: #ffc700; /* Keeps active dot the same color */
+  opacity: 1; /* Ensures it stands out */
+}
+
+/* Add hover effect for arrows */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #e6b000; /* Slightly darker shade for hover */
+}
